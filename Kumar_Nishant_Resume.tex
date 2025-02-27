@@ -1,0 +1,107 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1cm]{geometry} % Adjust margins for a compact layout
+\usepackage{enumitem} % For custom list formatting
+\usepackage{fontspec} % For custom fonts (requires XeLaTeX or LuaLaTeX)
+\usepackage{parskip} % For better paragraph spacing
+\usepackage{xcolor} % For custom colors
+\usepackage{hyperref} % For clickable links
+\usepackage{fontawesome} % For GitHub icon
+
+% Custom colors
+\definecolor{primary}{RGB}{0, 51, 102} % Dark blue for headings
+\definecolor{secondary}{RGB}{102, 102, 102} % Gray for subheadings
+
+% Custom fonts
+\setmainfont{Arial} % Set a professional font
+\newfontfamily\headingfont[Color=primary]{Arial Bold} % Bold font for headings
+
+% Section formatting
+\newcommand{\sectionheading}[1]{%
+    \vspace{0.5em}%
+    {\large\headingfont\color{primary}\textbf{#1}}%
+    \vspace{0.25em}%
+    \hrule%
+    \vspace{0.5em}%
+}
+
+% Custom itemize environment
+\newenvironment{cvitemize}{%
+    \begin{itemize}[leftmargin=1.5em, nosep, noitemsep]
+}{%
+    \end{itemize}
+}
+
+% Begin document
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge\headingfont\color{primary}\textbf{KUMAR NISHANT}}\\[0.5em]
+    {\large\color{secondary}\textbf{Full-Stack Developer}}\\[0.5em]
+    {\small \faMapMarker\ Bhagalpur, Bihar \quad |\quad \textbf{Phone:} (+91) 8986412823 \quad | \quad \faEnvelope\ \href{mailto:me.knishant@gmail.com}{me.knishant@gmail.com}}\\[0.25em]
+    {\small \faLinkedinSquare\ \href{https://www.linkedin.com/in/kumar-nishant-dev/}{\textbf{LinkedIn}} \quad | \quad \faGithub\ \href{https://github.com/K-Nishant-18}{\textbf{GitHub}}}
+\end{center}
+
+% Summary
+\sectionheading{Summary}
+\noindent Full-Stack Developer skilled in \textbf{Java Spring Boot} and \textbf{React.js}, with experience in building scalable web applications, RESTful APIs, and e-commerce platforms. Proficient in \textbf{Docker, Kubernetes, JWT authentication}, and \textbf{Spring Security}, with a focus on secure, high-performance solutions. Experienced in optimizing performance, improving security, and enhancing user engagement. Skilled in modern tools like \textbf{Vite, Tailwind CSS}, and AI platforms to streamline development and deliver impactful solutions. Adept at working in \textbf{Agile Development} environments, ensuring efficient collaboration and iterative improvements.
+
+
+
+% Skills
+\sectionheading{Skills}
+\begin{cvitemize}
+    \item \textbf{Programming Languages:} C, Java, JavaScript, TypeScript
+    \item \textbf{Frontend:} Vite, React.js, HTML5, CSS3, Tailwind CSS
+    \item \textbf{Backend:} Spring Boot, Docker, Kubernetes
+    \item \textbf{Database:} MySQL, MongoDB
+    \item \textbf{Tools \& Technologies:} Git, GitHub, Maven, Postman, IntelliJ IDEA, VS Code
+    \item \textbf{Authentication \& Security:} JWT, Spring Security
+    \item \textbf{Testing \& Development:} API Testing, Postman
+    \item \textbf{Cloud \& Deployment:} Vercel, Heroku
+\end{cvitemize}
+
+% Additional Skills
+\sectionheading{Additional Skills}
+\begin{cvitemize}
+    \item \textbf{Software Proficiency:} MS Excel, MS PowerPoint, Notion
+    \item \textbf{AI Tools:} ChatGPT, Claude, NotebookLM, Perplexity, Replicate
+    \item \textbf{Design Tools:} Canva, Figma, Spline
+     \item \textbf{Languages:} English \textbf{(Advanced)}, Hindi \textbf{(Native)}
+\end{cvitemize}
+
+% Education
+\sectionheading{Education}
+\begin{cvitemize}
+    \item \textbf{B.Tech in Computer Science and Engineering} \hfill \textbf{2022--2026 (Expected)} \\
+    JIS College of Engineering, Kalyani \\
+    CGPA: 7.4/10
+
+    \item \textbf{Higher Secondary} \hfill \textbf{2019--2021} \\
+    Mod Narayan College, Amba \\
+    Percentage: 67\%
+\end{cvitemize}
+
+% Projects
+\sectionheading{Projects}
+\begin{cvitemize}
+    \item \textbf{The Cultural Circuit}\hfill \href{https://github.com/K-Nishant-18/cultural-circuit}{\color{primary}\textbf{\faGithub\ GitHub Link}}
+    \begin{cvitemize}
+        \item Developed a cultural heritage platform dedicated to preserving and promoting global traditions through features like blogs, festival coverage, and tour destinations, while enabling local vendors to showcase their products worldwide.
+        \item \textbf{Tech Stack:} Java, Spring Boot, React.js, Spring Security, JWT
+        \item \textbf{Impact:} Improved security 30\% with JWT authentication, built efficient RESTful APIs (25\% faster response), and optimized performance (40\% gain through caching).
+    \end{cvitemize}
+
+    \vspace{0.7em} % Add a small gap between projects
+    
+    \item \textbf{Collegia - (All-in-one app for students)}\hfill \href{https://github.com/K-Nishant-18/collegia}{\color{primary}\textbf{\faGithub\ GitHub Link}}
+    \begin{cvitemize}
+        \item Built ‘Collegia,’ an all-in-one platform enhancing the student experience with social networking, job board, event management, student budgeting, research collaboration, safety awareness, and some go-to tools.  
+        \item \textbf{Tech Stack:} Java, Spring MVC, React.js, MySQL, Spring Security
+        \item \textbf{Impact:} Enhanced security with JWT implementation (50\% improvement), developed responsive React frontend (20\% engagement increase), optimized for scale (35\% latency reduction).
+    \end{cvitemize}
+\end{cvitemize}
+
+
+
+\end{document}
